@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>小樱的个人主页 | 樱花粉主题</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-layer" aria-hidden="true">
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="sparkle"></span>
+    <span class="sparkle"></span>
+    <span class="sparkle"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-icon">🌸</span>
+      <span class="brand-text">小樱の心动空间</span>
+    </div>
+    <nav class="site-nav">
+      <a class="nav-link" href="#home">个人主页</a>
+      <a class="nav-link" href="#notes">我的笔记</a>
+      <a class="nav-link" href="#blog">我的博客</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section hero">
+      <div class="hero-card">
+        <div class="hero-avatar">
+          <img
+            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=420&auto=format&fit=crop"
+            alt="我的头像"
+          />
+        </div>
+        <div class="hero-info">
+          <p class="hero-label">欢迎来到我的小世界</p>
+          <h1>我是小樱，一名喜欢研究与记录的女生。</h1>
+          <p class="hero-desc">
+            我在这里整理学术笔记、发布博客杂谈，也会记录生活中的小灵感。
+            如果你也喜欢温柔又精致的学习方式，欢迎一起交流～
+          </p>
+          <div class="hero-tags">
+            <span>学术杂谈</span>
+            <span>笔记整理</span>
+            <span>灵感收集</span>
+          </div>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#notes">去看笔记</a>
+            <a class="ghost-btn" href="#blog">浏览博客</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-glow"></div>
+    </section>
+
+    <section id="notes" class="section">
+      <div class="section-header">
+        <div>
+          <h2>我的笔记</h2>
+          <p>点击左侧标题即可阅读 Markdown 笔记内容。</p>
+        </div>
+        <div class="search-bar">
+          <input id="notes-search" type="search" placeholder="搜索笔记关键词" />
+          <button id="notes-search-btn">搜索</button>
+        </div>
+      </div>
+      <div class="notes-layout">
+        <aside class="notes-list" id="notes-list"></aside>
+        <article class="notes-panel" id="notes-content">
+          <div class="placeholder">请选择左侧笔记标题阅读内容 ✨</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="blog" class="section">
+      <div class="section-header">
+        <div>
+          <h2>我的博客</h2>
+          <p>论坛式的学术杂谈区，欢迎来讨论灵感与研究思路。</p>
+        </div>
+        <div class="search-bar">
+          <input id="blog-search" type="search" placeholder="搜索博客关键词" />
+          <button id="blog-search-btn">搜索</button>
+        </div>
+      </div>
+      <div class="forum" id="blog-forum"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>愿你的每一页笔记都闪着粉色的光。</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
